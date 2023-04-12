@@ -1,26 +1,14 @@
-export const PokemonQuery = (count: number) => {
-  return ` query pokemons($first: Int!){
-        pokemons(first: ${count}){
-          id
-          number
-          name
-          weight{
-            minimum
-            maximum
-          }
-          height{
-            minimum
-            maximum
-          }
-          classification
-          types
-          resistant
-          weaknesses
-          fleeRate
-          maxCP
-          maxHP
-          image
-        }
-      }
-      `;
+export const PokemonQuery = () => {
+  return `
+  query pokemons($first: Int!) {
+    pokemons(first: $first) {
+      id
+      number
+      name
+      classification
+      types
+      image
+    }
+  }
+`;
 };

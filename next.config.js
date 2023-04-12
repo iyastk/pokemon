@@ -11,8 +11,17 @@ const nextConfig = {
         port: "",
         pathname: "/dociql/images/**",
       },
+      {
+        protocol: "https",
+        hostname: "img.pokemondb.net",
+        port: "",
+        pathname: "/artwork/**",
+      },
     ],
-  },
-};
+
+      }
+    
+  };
+
 
 module.exports = nextConfig;
